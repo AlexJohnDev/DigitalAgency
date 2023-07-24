@@ -121,6 +121,10 @@
   display: inline-block !important;
 }
 
+img {
+  object-fit: cover;
+}
+
 .fa-search {
   color: aqua;
 }
@@ -201,9 +205,14 @@
   margin: 0 auto;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: "Montserrat";
   margin-top: 0px;
+  min-width: 320px !important;
 }
 
 .container {
@@ -371,7 +380,7 @@ body {
 }
 
 .contact {
-  background-color: #0b0b0f;
+  background-color: rgb(11, 11, 15);
   padding: 30px 0 80px 0;
   border-bottom: 1px solid grey;
 }
@@ -413,7 +422,7 @@ body {
 }
 
 footer {
-  background-color: #0b0b0f;
+  background-color: rgb(11, 11, 15);
   padding: 35px 0;
 }
 
@@ -441,7 +450,7 @@ footer {
 
 @media (max-width: 767px) {
   .footer-text,
-.about-text {
+  .about-text {
     margin-bottom: 10px;
   }
 }
@@ -490,7 +499,7 @@ header {
 }
 
 .header-box {
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   height: 100%;
   padding: 20px;
   display: flex;
@@ -527,7 +536,7 @@ header {
 }
 
 .latest-news {
-  background-color: #0b0b0f;
+  background-color: rgb(11, 11, 15);
   padding: 40px 20px 150px 20px;
 }
 
@@ -535,7 +544,7 @@ header {
   display: flex;
   padding-bottom: 30px;
   flex-direction: column;
-  border: 1px solid #272727;
+  border: 1px solid rgb(39, 39, 39);
 }
 .latest-block img {
   height: 430px;
@@ -568,6 +577,11 @@ nav ul {
   margin-right: 0;
   text-align: left;
   transition: ease 0.8s opacity;
+}
+nav ul a {
+  list-style: none;
+  text-decoration: none;
+  color: white;
 }
 @media (max-width: 767px) {
   nav ul {
@@ -607,7 +621,6 @@ nav ul li {
   font-weight: 600;
   padding: 10px 0;
   cursor: pointer;
-  width: 100%;
 }
 nav ul li::after {
   transition: all ease-in-out 0.3s;
@@ -646,7 +659,7 @@ nav .mobile-bar span {
   background: aqua;
 }
 nav .mobile-bar:hover span {
-  background: #006c70;
+  background: rgb(0, 108, 112);
 }
 
 .contact-li {
@@ -661,12 +674,12 @@ nav .mobile-bar:hover span {
 }
 
 .services {
-  background-color: #0b0b0f;
+  background-color: rgb(11, 11, 15);
   padding: 60px 0 150px 0;
 }
 
 .services-box {
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   padding: 20px 20px 40px 20px;
   border-bottom: 3px solid white;
   cursor: pointer;
@@ -699,10 +712,10 @@ nav .mobile-bar:hover span {
 }
 
 .testimonial-wrapper {
-  border: 1px solid #272727;
+  border: 1px solid rgb(39, 39, 39);
   padding: 30px;
   text-align: center;
-  background-color: #0b0b0f;
+  background-color: rgb(11, 11, 15);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -746,7 +759,6 @@ span.swiper-pagination-bullet {
 .testimonial {
   padding-bottom: 60px;
   overflow: hidden;
-
 }
 
 .company-logo {
@@ -759,17 +771,17 @@ span.swiper-pagination-bullet {
 
 .section-works,
 .testimonial {
-  background-color: #141414;
+  background-color: rgb(20, 20, 20);
   padding-top: 60px;
 }
 
 .gallery {
   margin-top: 50px;
   padding-bottom: 150px;
+  width: 100%;
 }
 
 .gallery-img {
-  height: 350px;
   width: 100%;
   background-size: cover;
 }
